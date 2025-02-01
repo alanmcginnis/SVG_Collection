@@ -4,7 +4,8 @@ const path = require('path');
 const cors = require('cors');
 const app = express();
 const PORT = 3000;
-const iconPath = "2025-02-01_svgs.json"
+
+const jsonPath = "2025-02-01_svgs.json"
 
 const allowedOrigins = ['http://localhost:8080','http://localhost:8081']; // Replace with your actual production domain(s)
 
@@ -19,7 +20,7 @@ app.use(cors({
 }));
 
 // Load the JSON file containing the names and paths of the SVGs
-const iconsData = JSON.parse(fs.readFileSync(path.join(__dirname, iconPath), 'utf8'));
+const iconsData = JSON.parse(fs.readFileSync(path.join(__dirname, jsonPath), 'utf8'));
 
 // Endpoint to serve icons with pagination
 app.get('/api/icons', (req, res) => {

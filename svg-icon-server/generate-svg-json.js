@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Path to the directory containing SVG files
-const svgDirectory = './icons'; // Update this path to your SVG folder
+const svgDirectory = './svg-icon-server/icons'; // Update this path to your SVG folder
 
 // Base name for the output JSON file
 const baseOutputJsonFile = 'svgs.json';
