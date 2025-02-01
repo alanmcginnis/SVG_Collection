@@ -1,0 +1,26 @@
+# My Folders
+backup
+node_modules
+
+# My Files
+.DS_Store
+**/*.svg
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
